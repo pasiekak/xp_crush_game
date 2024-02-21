@@ -1,0 +1,54 @@
+.rating {
+    position: relative;
+    height: 100px;
+    width: 300px;
+    gap: 5px;
+}
+.rating svg:nth-child(1) {
+    position: absolute;
+    top:20px;
+    left: 50px;
+    rotate: -30deg;   
+}
+.rating svg:nth-child(2) {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.rating svg:nth-child(3) {
+    position: absolute;
+    top:20px;
+    right: 50px;
+    rotate: 30deg;
+}
+.rating svg.empty {
+    animation: scaleEmptyStar 5s linear;
+}
+.rating svg.filled {
+    animation: scaleFilledStar 5s linear;
+}
+@keyframes scaleEmptyStar {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@keyframes scaleFilledStar {
+    0% {
+      transform: scale(0);
+    }
+    95% {
+        transform: scale(1);
+    }
+    98% {
+        transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}

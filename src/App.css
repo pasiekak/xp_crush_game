@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('../public/images/background-xp-3840-2160.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

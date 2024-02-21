@@ -1,0 +1,10 @@
+.cloud {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    z-index: 1;
+}
+
+.cloud img {
+    width: 8rem;
+}

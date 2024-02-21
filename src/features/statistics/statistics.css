@@ -1,0 +1,13 @@
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.statistics span:nth-of-type(even) {
+    text-align: right;
+}
+.statistics span:nth-of-type(odd) {
+    font-weight: bold;
+}
+.statistics span {
+    font-size: 18px;
+}

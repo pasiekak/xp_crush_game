@@ -1,0 +1,36 @@
+.tile {
+    position: relative;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.tile .crush_animation {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 50%;
+    animation: crush 800ms linear;
+}
+.tile img {
+    width: 38px;
+    height: 38px;
+}
+
+@keyframes crush {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

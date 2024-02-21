@@ -1,0 +1,6 @@
+.board {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 2px;
+}
